@@ -1,1267 +1,278 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Delphi Dashboard Mockup</title>
-
+    <title>Pre-Launch Strategy Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
-
         body {
-
             font-family: 'Inter', sans-serif;
-
         }
-
-        /* Custom scrollbar for better aesthetics */
-
+        /* Custom scrollbar for webkit browsers */
         .sidebar-scroll::-webkit-scrollbar {
-
             width: 4px;
-
         }
-
-        .sidebar-scroll::-webkit-scrollbar-thumb {
-
-            background-color: #4b5563;
-
-            border-radius: 20px;
-
-        }
-
         .sidebar-scroll::-webkit-scrollbar-track {
-
-            background-color: #1f2937;
-
+            background: #1e293b;
         }
-
-        .page-content {
-
-            display: none;
-
+        .sidebar-scroll::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 2px;
         }
-
-        .page-content.active {
-
-            display: block;
-
+        .sidebar-scroll::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
         }
-
     </style>
-
 </head>
-
-<body class="bg-gray-100">
-
-
-
-    <div class="flex h-screen bg-gray-100">
-
-        <!-- Sidebar -->
-
-        <aside class="w-64 flex flex-col bg-[#1e293b] text-white overflow-y-auto sidebar-scroll">
-
-            <div class="p-4 border-b border-gray-700">
-
-                <div class="flex items-center">
-
-                    <div class="w-10 h-10 bg-blue-500 rounded-md flex items-center justify-center text-xl font-bold">D</div>
-
-                    <div class="ml-3">
-
-                        <p class="text-lg font-bold">Delphi</p>
-
-                        <p class="text-xs text-gray-400">by Hindustan Unilever</p>
-
-                    </div>
-
-                </div>
-
+<body class="bg-slate-100 text-slate-800">
+    <div class="flex h-screen">
+        <!-- Sidebar Navigation -->
+        <aside class="w-64 bg-slate-800 text-slate-300 flex flex-col fixed h-full">
+            <div class="p-4 border-b border-slate-700">
+                <h1 class="text-xl font-bold text-white">Delphi</h1>
+                <p class="text-xs text-slate-400">by Hindustan Unilever</p>
             </div>
+            <nav class="flex-1 overflow-y-auto sidebar-scroll px-2 py-4">
+                <h2 class="px-4 mb-2 text-xs uppercase text-slate-500 tracking-wider">Main</h2>
+                <ul>
+                    <li>
+                        <a href="#" class="flex items-center px-4 py-2.5 text-white bg-slate-700 rounded-lg">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10v11h6V10H3zm12 4v7h6v-7h-6zM3 3v4h18V3H3zm12 0v8h6V3h-6zM9 3v18h6V3H9z"></path></svg>
+                            Dashboard
+                        </a>
+                    </li>
+                </ul>
 
-            
+                <h2 class="px-4 mt-6 mb-2 text-xs uppercase text-slate-500 tracking-wider">Value Chain</h2>
+                <ul>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>Procurement</a></li>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M17 18h1"></path><path d="M12 18h1"></path><path d="M7 18h1"></path></svg>Production</a></li>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>Inventory</a></li>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"></path><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"></path><path d="M19 19a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"></path><path d="m10 14 5 5"></path><path d="m5 5 5 5"></path></svg>Marketing & Sales</a></li>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M14 14h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2v-4Z"></path><path d="M10 18h1"></path><path d="M6 18h1"></path><circle cx="18" cy="18" r="2"></circle><circle cx="6" cy="6" r="2"></circle></svg>Distribution</a></li>
+                </ul>
 
-            <nav id="sidebar-nav" class="flex-1 px-2 py-4 space-y-2">
-
-                <!-- MAIN -->
-
-                <div class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Main</div>
-
-                <a href=“index.html” data-target="dashboard-page" class="nav-link flex items-center px-4 py-2 text-sm bg-gray-900 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-
-                    Dashboard
-
-                </a>
-
-
-
-                <!-- VALUE CHAIN -->
-
-                <div class="px-4 pt-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Value Chain</div>
-
-                <a href="#" data-target="procurement-page" class="nav-link flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-
-                    Procurement
-
-                </a>
-
-                <a href=“production.html” data-target="production-page" class="nav-link flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 2h8a1 1 0 001-1zM3 11h10"></path></svg>
-
-                    Production
-
-                </a>
-
-                <a href="#" data-target="inventory-page" class="nav-link flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
-
-                    Inventory
-
-                </a>
-
-                <a href=“marketing.html” data-target="marketing-page" class="nav-link flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
-
-                    Marketing & Sales
-
-                </a>
-
-                <a href="#" data-target="distribution-page" class="nav-link flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" > <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5v-1.875a3.375 3.375 0 003.375-3.375h1.5a1.125 1.125 0 011.125 1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75v-1.5a3.375 3.375 0 013.375-3.375h1.5A3.375 3.375 0 0118 6.375v1.5m-6 12v-1.875a3.375 3.375 0 013.375-3.375h1.5a1.125 1.125 0 001.125-1.125v-1.5a3.375 3.375 0 01-3.375-3.375H9.75V7.5" /> </svg>
-
-                    Distribution
-
-                </a>
-
-
-
-                <!-- ANALYSIS -->
-
-                <div class="px-4 pt-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Analysis</div>
-
-                <a href="#" class="nav-link flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-
-                    Financials
-
-                </a>
-
-                <a href="#" class="nav-link flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path></svg>
-
-                    Reports & Analytics
-
-                </a>
-
+                <h2 class="px-4 mt-6 mb-2 text-xs uppercase text-slate-500 tracking-wider">Analysis</h2>
+                <ul>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"></line><line x1="18" x2="18" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="16"></line></svg>Financials</a></li>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>Reports & Analytics</a></li>
+                </ul>
+                
+                <h2 class="px-4 mt-6 mb-2 text-xs uppercase text-slate-500 tracking-wider">Settings</h2>
+                <ul>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 0 2.2l-.15.1a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1 0-2.2l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>Game Settings</a></li>
+                    <li><a href="#" class="flex items-center px-4 py-2.5 hover:bg-slate-700 rounded-lg"><svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" x2="12.01" y1="17" y2="17"></line></svg>Help & Tutorial</a></li>
+                </ul>
             </nav>
-
-
-
-            <!-- SETTINGS -->
-
-            <div class="px-4 py-2 mt-auto">
-
-                <div class="px-4 pt-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Settings</div>
-
-                <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-
-                    Game Settings
-
-                </a>
-
-                <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg">
-
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4c0-1.191.5-2.274 1.343-3.055M12 14v4m-4-4v4m8-4v4M4 21h16M4 17h16"></path></svg>
-
-                    Help & Tutorial
-
-                </a>
-
+            <div class="p-4 border-t border-slate-700">
+                <div class="flex items-center">
+                    <img class="w-10 h-10 rounded-full" src="https://i.pravatar.cc/150?u=alexjohnson" alt="Alex Johnson">
+                    <div class="ml-3">
+                        <p class="text-sm font-medium text-white">Alex Johnson</p>
+                        <p class="text-xs text-slate-400">Team Alpha</p>
+                    </div>
+                </div>
             </div>
-
         </aside>
 
-
-
-        <!-- Main content -->
-
-        <main class="flex-1 flex flex-col overflow-hidden">
-
+        <!-- Main Content -->
+        <main class="ml-64 flex-1 flex flex-col">
             <!-- Header -->
-
-            <header class="flex items-center justify-between p-4 bg-white border-b">
-
-                <div class="flex items-center space-x-4">
-
-                    <div class="px-4 py-1.5 border border-gray-300 rounded-full text-sm font-semibold text-gray-700">Round 3 of 8</div>
-
-                    <div class="px-4 py-1.5 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">23:45 remaining</div>
-
+            <header class="bg-white border-b border-slate-200 p-4 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-sm hover:bg-blue-700">Pre-Launch</button>
+                    <a href="live.html" class="px-4 py-2 text-sm font-semibold text-slate-600 bg-slate-100 rounded-md hover:bg-slate-200">Live Market</button>
+                    <div class="hidden md:flex items-center ml-4 pl-4 border-l border-slate-200">
+                        <span class="text-sm font-medium text-slate-500">Phase 2 of 4</span>
+                        <div class="ml-4 flex items-center bg-amber-100 text-amber-800 text-sm font-medium px-3 py-1 rounded-full">
+                            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.414-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                            45:30 remaining
+                        </div>
+                    </div>
                 </div>
-
                 <div class="flex items-center space-x-4">
-
-                    <button class="relative text-gray-500 hover:text-gray-800">
-
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4c0-1.191.5-2.274 1.343-3.055M12 14v4m-4-4v4m8-4v4M4 21h16M4 17h16"></path></svg>
-
+                    <button class="text-slate-500 hover:text-slate-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4s-1.79 4-4 4c-1.742 0-3.223-.835-3.772-2M12 12h.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.QA1"></path></svg>
                     </button>
-
-                    <button class="relative text-gray-500 hover:text-gray-800">
-
+                    <button class="relative text-slate-500 hover:text-slate-700">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
-
-                         <span class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full text-white text-[8px] flex items-center justify-center">9</span>
-
+                        <span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-500 ring-2 ring-white"></span>
                     </button>
-
-                    <button class="px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700">
-
-                        Submit Decisions
-
-                    </button>
-
+                    <button class="px-4 py-2 text-sm font-semibold text-white bg-slate-800 rounded-md shadow-sm hover:bg-slate-900">Submit Strategy</button>
                 </div>
-
             </header>
 
-
-
-            <!-- Page Content Container -->
-
-            <div class="flex-1 p-6 overflow-y-auto">
-
-
-
-                <!-- DASHBOARD PAGE -->
-
-                <div id="dashboard-page" class="page-content active">
-
-                    <!-- Key Metrics -->
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-                        <!-- Revenue Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex items-center justify-between">
-
-                                <p class="text-sm font-medium text-gray-500">Revenue</p>
-
-                                <span class="text-xs font-semibold text-green-500 flex items-center">
-
-                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
-
-                                    12.5%
-
-                                </span>
-
-                            </div>
-
-                            <p class="text-3xl font-bold text-gray-800 mt-1">₹42.8M</p>
-
-                            <p class="text-xs text-gray-400 mt-1">vs ₹38.1M last round</p>
-
-                        </div>
-
-
-
-                        <!-- Profit Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex items-center justify-between">
-
-                                <p class="text-sm font-medium text-gray-500">Profit</p>
-
-                                <span class="text-xs font-semibold text-green-500 flex items-center">
-
-                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
-
-                                    8.3%
-
-                                </span>
-
-                            </div>
-
-                            <p class="text-3xl font-bold text-gray-800 mt-1">₹12.4M</p>
-
-                            <p class="text-xs text-gray-400 mt-1">vs ₹11.5M last round</p>
-
-                        </div>
-
-
-
-                        <!-- Market Share Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex items-center justify-between">
-
-                                <p class="text-sm font-medium text-gray-500">Market Share</p>
-
-                                <span class="text-xs font-semibold text-green-500 flex items-center">
-
-                                   <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
-
-                                   1.2%
-
-                                </span>
-
-                            </div>
-
-                            <p class="text-3xl font-bold text-gray-800 mt-1">23.5%</p>
-
-                            <p class="text-xs text-gray-400 mt-1">vs 22.3% last round</p>
-
-                        </div>
-
-
-
-                        <!-- Inventory Value Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex items-center justify-between">
-
-                                <p class="text-sm font-medium text-gray-500">Inventory Value</p>
-
-                                <span class="text-xs font-semibold text-red-500 flex items-center">
-
-                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-
-                                    3.8%
-
-                                </span>
-
-                            </div>
-
-                            <p class="text-3xl font-bold text-gray-800 mt-1">₹18.2M</p>
-
-                            <p class="text-xs text-gray-400 mt-1">vs ₹18.9M last round</p>
-
-                        </div>
-
+            <!-- Dashboard Content -->
+            <div class="p-8 flex-1 overflow-y-auto">
+                <!-- Title and Actions -->
+                <div class="flex justify-between items-center mb-6">
+                    <div>
+                        <h1 class="text-3xl font-bold text-slate-900">Pre-Launch Strategy Dashboard</h1>
+                        <p class="text-slate-500 mt-1">Plan your market entry strategy and product positioning</p>
                     </div>
-
-
-
-                    <!-- Supply Chain Alert -->
-
-                    <div class="mt-6 bg-yellow-100 border-l-4 border-yellow-400 p-4 rounded-r-lg flex items-center justify-between">
-
-                        <div class="flex items-center">
-
-                            <div class="text-yellow-600">
-
-                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-
-                            </div>
-
-                            <div>
-
-                                <p class="font-bold text-yellow-800">Supply Chain Alert</p>
-
-                                <p class="text-sm text-yellow-700">Political unrest in Southeast Asia is affecting palm oil supplies. Consider alternative sources or formulations.</p>
-
-                            </div>
-
-                        </div>
-
-                        <button class="border border-gray-400 text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-200">View Options</button>
-
+                    <div class="flex space-x-2">
+                        <button class="flex items-center bg-white border border-slate-300 rounded-md px-4 py-2 text-sm font-semibold hover:bg-slate-50">
+                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16.5v-3.35a2 2 0 0 0-.94-1.66l-5.7-4.12A2 2 0 0 0 11.28 9.5v5.05L5.57 9.42A2 2 0 0 0 4 10.9v3.42a2 2 0 0 0 .94 1.66l5.7 4.12A2 2 0 0 0 12.72 18.5v-5.05l5.7 4.12A2 2 0 0 0 20 16.5Z"></path><path d="M4 14v.7"></path><path d="m15.7 13.4 3.4 2.5"></path></svg>
+                            Planning Phase
+                            <svg class="w-4 h-4 ml-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                         <button class="flex items-center bg-white border border-slate-300 rounded-md px-4 py-2 text-sm font-semibold hover:bg-slate-50">
+                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+                            Export Plan
+                        </button>
                     </div>
-
-                    
-
-                    <!-- Value Chain Performance -->
-
-                    <div class="mt-6 bg-white p-6 rounded-xl shadow">
-
-                        <h2 class="text-lg font-semibold text-gray-800">Value Chain Performance</h2>
-
-                        <div class="mt-6 grid grid-cols-5 gap-4 text-center">
-
-                            <!-- Procurement -->
-
-                            <div>
-
-                                <div class="w-12 h-12 mx-auto bg-green-100 rounded-full flex items-center justify-center">
-
-                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-
-                                </div>
-
-                                <p class="mt-2 text-sm font-medium">Procurement</p>
-
-                                <p class="text-xs text-green-600 font-semibold">● Optimal</p>
-
-                            </div>
-
-                            <!-- Production -->
-
-                            <div>
-
-                                <div class="w-12 h-12 mx-auto bg-red-100 rounded-full flex items-center justify-center">
-
-                                    <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 2h8a1 1 0 001-1zM3 11h10"></path></svg>
-
-                                </div>
-
-                                <p class="mt-2 text-sm font-medium">Production</p>
-
-                                <p class="text-xs text-red-600 font-semibold">▲ At Risk</p>
-
-                            </div>
-
-                            <!-- Inventory -->
-
-                            <div>
-
-                                <div class="w-12 h-12 mx-auto bg-green-100 rounded-full flex items-center justify-center">
-
-                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
-
-                                </div>
-
-                                <p class="mt-2 text-sm font-medium">Inventory</p>
-
-                                <p class="text-xs text-green-600 font-semibold">● Optimal</p>
-
-                            </div>
-
-                            <!-- Marketing -->
-
-                            <div>
-
-                                <div class="w-12 h-12 mx-auto bg-yellow-100 rounded-full flex items-center justify-center">
-
-                                    <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
-
-                                </div>
-
-                                <p class="mt-2 text-sm font-medium">Marketing</p>
-
-                                <p class="text-xs text-yellow-600 font-semibold">● Warning</p>
-
-                            </div>
-
-                            <!-- Distribution -->
-
-                            <div>
-
-                                <div class="w-12 h-12 mx-auto bg-green-100 rounded-full flex items-center justify-center">
-
-                                    <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5v-1.875a3.375 3.375 0 003.375-3.375h1.5a1.125 1.125 0 011.125 1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75v-1.5a3.375 3.375 0 013.375-3.375h1.5A3.375 3.375 0 0118 6.375v1.5m-6 12v-1.875a3.375 3.375 0 013.375-3.375h1.5a1.125 1.125 0 001.125-1.125v-1.5a3.375 3.375 0 01-3.375-3.375H9.75V7.5" /> </svg>
-
-                                </div>
-
-                                <p class="mt-2 text-sm font-medium">Distribution</p>
-
-                                <p class="text-xs text-green-600 font-semibold">● Optimal</p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
-
-                            <div class="flex h-2.5 rounded-full">
-
-                                <div class="bg-green-500" style="width: 20%"></div>
-
-                                <div class="bg-red-500" style="width: 20%"></div>
-
-                                <div class="bg-green-500" style="width: 20%"></div>
-
-                                <div class="bg-yellow-500" style="width: 20%"></div>
-
-                                <div class="bg-green-500" style="width: 20%"></div>
-
-                            </div>
-
-                        </div>
-
-                         <div class="mt-2 grid grid-cols-5 text-center text-xs text-gray-500">
-
-                            <span>Procurement</span>
-
-                            <span>Production</span>
-
-                            <span>Inventory</span>
-
-                            <span>Marketing</span>
-
-                            <span>Distribution</span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Charts -->
-
-                     <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-                        <div class="bg-white p-6 rounded-xl shadow">
-
-                            <h3 class="text-lg font-semibold text-gray-800">Revenue Trends</h3>
-
-                            <div class="h-64 bg-gray-100 mt-4 rounded-lg flex items-center justify-center text-gray-400">Chart Placeholder</div>
-
-                        </div>
-
-                        <div class="bg-white p-6 rounded-xl shadow">
-
-                            <h3 class="text-lg font-semibold text-gray-800">Product Performance</h3>
-
-                            <div class="h-64 bg-gray-100 mt-4 rounded-lg flex items-center justify-center text-gray-400">Chart Placeholder</div>
-
-                        </div>
-
-                    </div>
-
                 </div>
 
-
-
-                <!-- PRODUCTION PAGE -->
-
-                <div id="production-page" class="page-content">
-
-                    <div class="flex justify-between items-center mb-6">
-
-                        <h1 class="text-2xl font-bold text-gray-800">Manufacturing & Production</h1>
-
-                        <div class="flex items-center space-x-2">
-
-                            <button class="flex items-center text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg px-3 py-2 hover:bg-gray-50">
-
-                                This Week
-
-                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-
-                            </button>
-
-                            <button class="flex items-center text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg px-3 py-2 hover:bg-gray-50">
-
-                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-
-                                Export
-
-                            </button>
-
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200">
+                        <div class="flex justify-between items-start">
+                             <p class="text-sm font-medium text-slate-500">Investment Budget</p>
+                             <span class="text-xs font-semibold text-green-600 bg-green-100 px-2 py-1 rounded-full">Available</span>
                         </div>
-
+                        <p class="text-3xl font-bold mt-2">₹50M</p>
+                        <p class="text-sm text-slate-400 mt-1">Allocated: ₹32M (64%)</p>
                     </div>
-
-
-
-                    <!-- Production Bottleneck Alert -->
-
-                    <div class="mb-6 bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg flex items-center justify-between">
-
-                        <div class="flex items-center">
-
-                            <div class="text-red-600">
-
-                               <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-
-                            </div>
-
-                            <div>
-
-                                <p class="font-bold text-red-800">Production Bottleneck Alert</p>
-
-                                <p class="text-sm text-red-700">Line 2 operating at 65% capacity due to raw material shortage. Consider alternative sourcing or production rescheduling.</p>
-
-                            </div>
-
+                    <div class="bg-white p-5 rounded-xl border border-slate-200">
+                        <div class="flex justify-between items-start">
+                             <p class="text-sm font-medium text-slate-500">Target Market Size</p>
+                             <span class="text-xs font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded-full">Identified</span>
                         </div>
-
-                        <div class="flex space-x-2">
-
-                            <button class="border border-gray-400 text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-200">View Options</button>
-
-                            <button class="bg-red-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-red-700">Mitigate Now</button>
-
-                        </div>
-
+                        <p class="text-3xl font-bold mt-2">₹180M</p>
+                        <p class="text-sm text-slate-400 mt-1">Addressable market</p>
                     </div>
-
-                    
-
-                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Production Planning by SKU</h2>
-
-                    
-
-                    <!-- Production Cards Grid -->
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                        <!-- Soap Plus Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex justify-between items-start">
-
-                               <div class="flex items-center space-x-3">
-
-                                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold">SP</div>
-
-                                    <div>
-
-                                        <p class="font-semibold text-gray-800">Soap Plus</p>
-
-                                        <p class="text-sm text-gray-500">Premium Soap Line</p>
-
-                                    </div>
-
-                               </div>
-
-                               <div class="text-xs font-semibold text-green-600 bg-green-100 px-2 py-1 rounded-full">● On Track</div>
-
-                            </div>
-
-                            <div class="grid grid-cols-3 gap-4 text-center my-4">
-
-                                <div>
-
-                                    <p class="text-xs text-gray-500">Planned</p>
-
-                                    <p class="font-bold text-lg text-gray-800">8,500 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Produced</p>
-
-                                    <p class="font-bold text-lg text-gray-800">6,200 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Remaining</p>
-
-                                    <p class="font-bold text-lg text-gray-800">2,300 units</p>
-
-                                </div>
-
-                            </div>
-
-                            <div class="flex items-center justify-between text-sm">
-
-                                <span class="text-gray-600">Progress</span>
-
-                                <span class="font-semibold text-gray-800">73%</span>
-
-                            </div>
-
-                            <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-
-                                <div class="bg-green-500 h-2 rounded-full" style="width: 73%"></div>
-
-                            </div>
-
-                            <div class="flex justify-between items-center mt-3">
-
-                                <p class="text-xs text-gray-500">Est. Completion: 2 days</p>
-
-                                <a href="#" class="text-xs font-semibold text-blue-600 hover:underline">Adjust Plan</a>
-
-                            </div>
-
+                    <div class="bg-white p-5 rounded-xl border border-slate-200">
+                        <div class="flex justify-between items-start">
+                             <p class="text-sm font-medium text-slate-500">Product Readiness</p>
+                             <span class="text-xs font-semibold text-amber-600 bg-amber-100 px-2 py-1 rounded-full">In Progress</span>
                         </div>
-
-
-
-                        <!-- Fresh Wash Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex justify-between items-start">
-
-                               <div class="flex items-center space-x-3">
-
-                                    <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center font-bold">FW</div>
-
-                                    <div>
-
-                                        <p class="font-semibold text-gray-800">Fresh Wash</p>
-
-                                        <p class="text-sm text-gray-500">Detergent Powder</p>
-
-                                    </div>
-
-                               </div>
-
-                               <div class="text-xs font-semibold text-red-600 bg-red-100 px-2 py-1 rounded-full">● At Risk</div>
-
-                            </div>
-
-                            <div class="grid grid-cols-3 gap-4 text-center my-4">
-
-                                <div>
-
-                                    <p class="text-xs text-gray-500">Planned</p>
-
-                                    <p class="font-bold text-lg text-gray-800">12,000 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Produced</p>
-
-                                    <p class="font-bold text-lg text-gray-800">5,800 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Remaining</p>
-
-                                    <p class="font-bold text-lg text-gray-800">6,200 units</p>
-
-                                </div>
-
-                            </div>
-
-                            <div class="flex items-center justify-between text-sm">
-
-                                <span class="text-gray-600">Progress</span>
-
-                                <span class="font-semibold text-gray-800">48%</span>
-
-                            </div>
-
-                            <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-
-                                <div class="bg-red-500 h-2 rounded-full" style="width: 48%"></div>
-
-                            </div>
-
-                            <div class="flex justify-between items-center mt-3">
-
-                                <p class="text-xs text-gray-500">Est. Completion: 5 days</p>
-
-                                <a href="#" class="text-xs font-semibold text-blue-600 hover:underline">Adjust Plan</a>
-
-                            </div>
-
-                        </div>
-
-                        
-
-                        <!-- Shine Clean Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex justify-between items-start">
-
-                               <div class="flex items-center space-x-3">
-
-                                    <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-lg flex items-center justify-center font-bold">SC</div>
-
-                                    <div>
-
-                                        <p class="font-semibold text-gray-800">Shine Clean</p>
-
-                                        <p class="text-sm text-gray-500">Liquid Detergent</p>
-
-                                    </div>
-
-                               </div>
-
-                               <div class="text-xs font-semibold text-yellow-800 bg-yellow-100 px-2 py-1 rounded-full">● Warning</div>
-
-                            </div>
-
-                            <div class="grid grid-cols-3 gap-4 text-center my-4">
-
-                                <div>
-
-                                    <p class="text-xs text-gray-500">Planned</p>
-
-                                    <p class="font-bold text-lg text-gray-800">6,500 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Produced</p>
-
-                                    <p class="font-bold text-lg text-gray-800">4,100 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Remaining</p>
-
-                                    <p class="font-bold text-lg text-gray-800">2,400 units</p>
-
-                                </div>
-
-                            </div>
-
-                            <div class="flex items-center justify-between text-sm">
-
-                                <span class="text-gray-600">Progress</span>
-
-                                <span class="font-semibold text-gray-800">63%</span>
-
-                            </div>
-
-                            <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-
-                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 63%"></div>
-
-                            </div>
-
-                            <div class="flex justify-between items-center mt-3">
-
-                                <p class="text-xs text-gray-500"></p> <!-- No Est Completion -->
-
-                                <a href="#" class="text-xs font-semibold text-blue-600 hover:underline">Adjust Plan</a>
-
-                            </div>
-
-                        </div>
-
-                        
-
-                        <!-- Nature Fresh Card -->
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <div class="flex justify-between items-start">
-
-                               <div class="flex items-center space-x-3">
-
-                                    <div class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center font-bold">NF</div>
-
-                                    <div>
-
-                                        <p class="font-semibold text-gray-800">Nature Fresh</p>
-
-                                        <p class="text-sm text-gray-500">Organic Soap</p>
-
-                                    </div>
-
-                               </div>
-
-                               <div class="text-xs font-semibold text-green-600 bg-green-100 px-2 py-1 rounded-full">● On Track</div>
-
-                            </div>
-
-                            <div class="grid grid-cols-3 gap-4 text-center my-4">
-
-                                <div>
-
-                                    <p class="text-xs text-gray-500">Planned</p>
-
-                                    <p class="font-bold text-lg text-gray-800">4,200 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Produced</p>
-
-                                    <p class="font-bold text-lg text-gray-800">3,400 units</p>
-
-                                </div>
-
-                                 <div>
-
-                                    <p class="text-xs text-gray-500">Remaining</p>
-
-                                    <p class="font-bold text-lg text-gray-800">800 units</p>
-
-                                </div>
-
-                            </div>
-
-                            <div class="flex items-center justify-between text-sm">
-
-                                <span class="text-gray-600">Progress</span>
-
-                                <span class="font-semibold text-gray-800">81%</span>
-
-                            </div>
-
-                            <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-
-                                <div class="bg-green-500 h-2 rounded-full" style="width: 81%"></div>
-
-                            </div>
-
-                            <div class="flex justify-between items-center mt-3">
-
-                                <p class="text-xs text-gray-500"></p> <!-- No Est Completion -->
-
-                                <a href="#" class="text-xs font-semibold text-blue-600 hover:underline">Adjust Plan</a>
-
-                            </div>
-
-                        </div>
-
+                        <p class="text-3xl font-bold mt-2">75%</p>
+                        <p class="text-sm text-slate-400 mt-1">Development complete</p>
                     </div>
-
+                    <div class="bg-white p-5 rounded-xl border border-slate-200">
+                        <div class="flex justify-between items-start">
+                             <p class="text-sm font-medium text-slate-500">Launch Timeline</p>
+                             <span class="text-xs font-semibold text-green-600 bg-green-100 px-2 py-1 rounded-full">On Track</span>
+                        </div>
+                        <p class="text-3xl font-bold mt-2">8 Weeks</p>
+                        <p class="text-sm text-slate-400 mt-1">Until market launch</p>
+                    </div>
                 </div>
 
-
-
-                <!-- MARKETING & SALES PAGE -->
-
-                <div id="marketing-page" class="page-content">
-
-                    <div class="flex justify-between items-center mb-6">
-
+                <!-- Strategy Recommendation -->
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6 flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="p-2 bg-blue-100 rounded-full mr-4">
+                           <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
                         <div>
-
-                            <h1 class="text-2xl font-bold text-gray-800">Customer Personas & Market Analysis</h1>
-
-                            <p class="text-sm text-gray-500 mt-1">Identify target segments and analyze market opportunities</p>
-
+                            <h3 class="font-semibold text-blue-800">Strategy Recommendation</h3>
+                            <p class="text-sm text-blue-700">Market research indicates strong demand for eco-friendly products. Consider positioning your brand as sustainable.</p>
                         </div>
-
-                        <div class="flex items-center space-x-2">
-
-                            <button class="flex items-center text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg px-3 py-2 hover:bg-gray-50">
-
-                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM3 16a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z"></path></svg>
-
-                                Filter
-
-                            </button>
-
-                            <button class="flex items-center text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg px-3 py-2 hover:bg-gray-50">
-
-                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-
-                                Export
-
-                            </button>
-
-                        </div>
-
                     </div>
-
-                    
-
-                    <!-- Market Analysis Cards -->
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <p class="text-sm font-medium text-gray-500">TAM (Total Addressable Market)</p>
-
-                            <p class="text-3xl font-bold text-blue-600 mt-2">₹485B</p>
-
-                            <p class="text-xs text-gray-400 mt-1">Global FMCG Market</p>
-
-                        </div>
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <p class="text-sm font-medium text-gray-500">SAM (Serviceable Addressable Market)</p>
-
-                            <p class="text-3xl font-bold text-green-600 mt-2">₹124B</p>
-
-                            <p class="text-xs text-gray-400 mt-1">Regional Markets We Can Serve</p>
-
-                        </div>
-
-                        <div class="bg-white p-5 rounded-xl shadow">
-
-                            <p class="text-sm font-medium text-gray-500">SOM (Serviceable Obtainable Market)</p>
-
-                            <p class="text-3xl font-bold text-purple-600 mt-2">₹18.6B</p>
-
-                            <p class="text-xs text-gray-400 mt-1">Realistic Market Share Target</p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Customer Personas</h2>
-
-
-
-                    <!-- Customer Persona Cards Grid -->
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-                        <!-- Urban Professional -->
-
-                        <div class="bg-white p-6 rounded-xl shadow">
-
-                            <div class="flex items-center flex-col">
-
-                                <img class="w-20 h-20 rounded-full object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Urban Professional">
-
-                                <h3 class="font-semibold text-lg mt-3">Urban Professional</h3>
-
-                                <p class="text-sm text-gray-500">Age: 28-42</p>
-
-                            </div>
-
-                            <div class="mt-4">
-
-                                <h4 class="font-semibold text-sm">Demographics</h4>
-
-                                <ul class="mt-2 space-y-1 text-sm text-gray-600 list-disc list-inside">
-
-                                    <li>Income: ₹15-25L annually</li>
-
-                                    <li>Location: Metro cities</li>
-
-                                    <li>Education: Graduate+</li>
-
-                                </ul>
-
-                            </div>
-
-                            <div class="mt-4">
-
-                                <h4 class="font-semibold text-sm">Behavior</h4>
-
-                                <ul class="mt-2 space-y-1 text-sm text-gray-600 list-disc list-inside">
-
-                                    <li>Premium quality conscious</li>
-
-                                    <li>Brand loyal</li>
-
-                                    <li>Online shopping preference</li>
-
-                                    <li>Sustainability-focused</li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- Family Homemaker -->
-
-                        <div class="bg-white p-6 rounded-xl shadow">
-
-                             <div class="flex items-center flex-col">
-
-                                <img class="w-20 h-20 rounded-full object-cover" src="https://images.unsplash.com/photo-1542944062-979462123659?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Family Homemaker">
-
-                                <h3 class="font-semibold text-lg mt-3">Family Homemaker</h3>
-
-                                <p class="text-sm text-gray-500">Age: 25-45</p>
-
-                            </div>
-
-                            <div class="mt-4">
-
-                                <h4 class="font-semibold text-sm">Demographics</h4>
-
-                                <ul class="mt-2 space-y-1 text-sm text-gray-600 list-disc list-inside">
-
-                                    <li>Income: ₹3-12L annually</li>
-
-                                    <li>Location: Tier 1-2 cities</li>
-
-                                    <li>Family size: 3-5 members</li>
-
-                                </ul>
-
-                            </div>
-
-                            <div class="mt-4">
-
-                                <h4 class="font-semibold text-sm">Behavior</h4>
-
-                                <ul class="mt-2 space-y-1 text-sm text-gray-600 list-disc list-inside">
-
-                                    <li>Value for money focused</li>
-
-                                    <li>Bulk purchasing</li>
-
-                                    <li>Traditional retail preference</li>
-
-                                    <li>Family safety priority</li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- Price-Conscious Consumer -->
-
-                        <div class="bg-white p-6 rounded-xl shadow">
-
-                             <div class="flex items-center flex-col">
-
-                                <img class="w-20 h-20 rounded-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Price-Conscious Consumer">
-
-                                <h3 class="font-semibold text-lg mt-3">Price-Conscious Consumer</h3>
-
-                                <p class="text-sm text-gray-500">Age: 22-55</p>
-
-                            </div>
-
-                            <div class="mt-4">
-
-                                <h4 class="font-semibold text-sm">Demographics</h4>
-
-                                <ul class="mt-2 space-y-1 text-sm text-gray-600 list-disc list-inside">
-
-                                    <li>Income: ₹1.5-6L annually</li>
-
-                                    <li>Location: Tier 2-3 cities</li>
-
-                                    <li>Occupation: Mixed</li>
-
-                                </ul>
-
-                            </div>
-
-                            <div class="mt-4">
-
-                                <h4 class="font-semibold text-sm">Behavior</h4>
-
-                                <ul class="mt-2 space-y-1 text-sm text-gray-600 list-disc list-inside">
-
-                                    <li>Price sensitive</li>
-
-                                    <li>Promotion driven</li>
-
-                                    <li>Local store preference</li>
-
-                                    <li>Word-of-mouth influenced</li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                    <button class="px-4 py-2 text-sm font-semibold text-blue-600 bg-white border border-blue-200 rounded-md shadow-sm hover:bg-blue-50">View Analysis</button>
                 </div>
 
+                <!-- Value Chain Preparation -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 mb-6">
+                    <h2 class="text-xl font-bold mb-6">Value Chain Preparation</h2>
+                    <div class="flex items-center justify-between relative">
+                        <!-- Connecting Line -->
+                        <div class="absolute top-1/2 left-0 w-full h-0.5 bg-slate-200" style="transform: translateY(-50%); z-index: 0;"></div>
+                        
+                        <!-- Steps -->
+                        <div class="flex flex-col items-center z-10 w-1/5">
+                            <div class="w-12 h-12 flex items-center justify-center bg-amber-100 rounded-full border-4 border-white">
+                                <svg class="w-6 h-6 text-amber-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                            </div>
+                            <p class="font-semibold mt-2 text-sm">Procurement</p>
+                            <p class="text-xs text-slate-500">Planning</p>
+                        </div>
+                        <div class="flex flex-col items-center z-10 w-1/5">
+                            <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full border-4 border-white">
+                               <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <p class="font-semibold mt-2 text-sm">Production</p>
+                            <p class="text-xs text-slate-500">Setup Complete</p>
+                        </div>
+                        <div class="flex flex-col items-center z-10 w-1/5">
+                            <div class="w-12 h-12 flex items-center justify-center bg-amber-100 rounded-full border-4 border-white">
+                                <svg class="w-6 h-6 text-amber-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="M20 12h2"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M12 22v-2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="M4 12H2"></path><path d="m6.34 6.34-1.41-1.41"></path></svg>
+                            </div>
+                            <p class="font-semibold mt-2 text-sm">Inventory</p>
+                            <p class="text-xs text-slate-500">Preparing</p>
+                        </div>
+                        <div class="flex flex-col items-center z-10 w-1/5">
+                           <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full border-4 border-white">
+                                <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            </div>
+                            <p class="font-semibold mt-2 text-sm">Marketing</p>
+                            <p class="text-xs text-slate-500">Campaign Design</p>
+                        </div>
+                        <div class="flex flex-col items-center z-10 w-1/5">
+                            <div class="w-12 h-12 flex items-center justify-center bg-slate-200 rounded-full border-4 border-white">
+                                <svg class="w-6 h-6 text-slate-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 17H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><path d="M12 15a3 3 0 0 0 0-6v6Z"></path><path d="M12 12H6v9h12v-9h-6Z"></path></svg>
+                            </div>
+                            <p class="font-semibold mt-2 text-sm">Distribution</p>
+                            <p class="text-xs text-slate-500">Not Started</p>
+                        </div>
+                    </div>
+                </div>
 
-
-                <!-- Placeholder for other pages -->
-
-                 <div id="procurement-page" class="page-content"><h1 class="text-2xl font-bold">Procurement Page</h1></div>
-
-                 <div id="inventory-page" class="page-content"><h1 class="text-2xl font-bold">Inventory Page</h1></div>
-
-                 <div id="distribution-page" class="page-content"><h1 class="text-2xl font-bold">Distribution Page</h1></div>
+                <!-- Insights and Development -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl border border-slate-200">
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-xl font-bold">Market Research Insights</h2>
+                            <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">View Full Report</a>
+                        </div>
+                        <div>
+                            <div class="mb-4">
+                                <div class="flex justify-between mb-1">
+                                    <p class="text-sm font-medium">Consumer Preference</p>
+                                    <p class="text-sm font-medium">78%</p>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 78%"></div>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-1">78% prefer eco-friendly packaging</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium mb-1">Price Sensitivity</p>
+                                <div class="w-full bg-slate-200 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-1">Optimal price point: ₹45-55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-200">
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-xl font-bold">Product Development</h2>
+                            <button class="flex items-center text-sm font-semibold text-blue-600 hover:underline">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                                Add Product
+                            </button>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-green-100 text-green-600 font-bold rounded-md mr-4">EP</div>
+                                    <div>
+                                        <p class="font-semibold">EcoClean Plus</p>
+                                        <p class="text-sm text-slate-500">Eco-friendly dishwashing liquid</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-green-700 bg-green-200 px-2 py-1 rounded-full">Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-
         </main>
-
     </div>
-
-
-
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function() {
-
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            const pageContents = document.querySelectorAll('.page-content');
-
-
-
-            navLinks.forEach(link => {
-
-                link.addEventListener('click', function(event) {
-
-                    event.preventDefault();
-
-                    
-
-                    const targetId = this.dataset.target;
-
-                    
-
-                    // Update active state on nav links
-
-                    navLinks.forEach(navLink => {
-
-                        navLink.classList.remove('bg-gray-900');
-
-                        navLink.classList.add('text-gray-300', 'hover:bg-gray-700');
-
-                    });
-
-                    this.classList.add('bg-gray-900');
-
-                    this.classList.remove('text-gray-300', 'hover:bg-gray-700');
-
-
-
-                    // Show/hide page content
-
-                    pageContents.forEach(page => {
-
-                        if (page.id === targetId) {
-
-                            page.classList.add('active');
-
-                        } else {
-
-                            page.classList.remove('active');
-
-                        }
-
-                    });
-
-                });
-
-            });
-
-        });
-
-    </script>
 </body>
 </html>
